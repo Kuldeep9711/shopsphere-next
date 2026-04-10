@@ -35,8 +35,8 @@ model Product {
   description   String?
   price         Float
   stock         Int             @default(0)
-  catogoryId    Int     
-  catogory      Catogory        @relation(fields: [catogoryId], references: [id])
+  categoryId    Int     
+  category      Category        @relation(fields: [categoryId], references: [id])
   cartItems     CartItem[]
   orderItems    OrderItem[]
 }
